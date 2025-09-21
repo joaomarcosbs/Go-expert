@@ -1,0 +1,10 @@
+CEP: 88037-440
+Localidade: Florianópolis
+Logradouro: Rua Dom Wilsom Laus Schmidt
+UF: SC
+Estado: Santa Catarina
+Região: Sul
+IBGE: 4205407
+GIA: 
+DDD: 48
+SIAFI: 8105
