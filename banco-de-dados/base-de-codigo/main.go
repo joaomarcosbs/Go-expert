@@ -27,7 +27,7 @@ func insertProduct(db *sql.DB, product *Product) error {
 		return err
 	}
 	defer stmt.Close()
-	_, err = stmt.Exec(product.ID, product.Name, product.Price)
+	_, err = stmt.Exec(product.ID, product.Name, product.Price //usar exec quando for alterar alguma coisa
 	if err != nil {
 		return err
 	}
@@ -67,7 +67,7 @@ func selectProduct(db *sql.DB, id string) (*Product, error) {
 	}
 	defer stmt.Close()
 	var product Product
-	err = stmt.QueryRow(id).Scan(&product.ID, &product.Name, &product.Price)
+	err = stmt.QueryRow(id).Scan(&product.ID, &product.Name, &product.Price) // usar query quando for consultar
 	if err != nil {
 		return nil, err
 	}
